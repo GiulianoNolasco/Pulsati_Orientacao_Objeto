@@ -17,7 +17,7 @@ public class contaEspecial extends conta {
             System.out.println("Conta número "+getNumeroDaConta()+". Titular "+getNomeDoTitular()+": Valor sacado com sucesso: R$ " + valorSacado + " O saldo atual é de: R$" + getSaldo() + "O limite atual é de: R$" + getLimite());
         }
     }
-
+ 
     public void transferir(double valorTransferido, conta contaSaida, conta contaEntrada) {
         if ((valorTransferido) > (getSaldo() + getLimite())) {
             System.out.println("Conta número "+getNumeroDaConta()+". Titular "+getNomeDoTitular()+": Não é possível efetuar a transferência, pois o saldo ficará em: R$ " + (getSaldo() - valorTransferido));

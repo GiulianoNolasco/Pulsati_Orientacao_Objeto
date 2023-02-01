@@ -13,8 +13,6 @@ public class ExercicioBiblioteca {
 
     public static void main(String[] args) {
 
-        biblioteca b1 = new biblioteca();
-
         livro livro1 = new livro();
         livro1.setTitulo("A volta dos que não foram");
         livro1.setNumeroDeExemplares(1);
@@ -23,25 +21,23 @@ public class ExercicioBiblioteca {
         r1.setTitulo("As longas tranças de um careca");
         r1.setNumeroDeExemplares(3);
 
-        //teste livro1
-        b1.ConsultarNRExemplares(livro1);
-        b1.AlugarItem(livro1);
-        b1.ConsultarNRExemplares(livro1);
-        b1.AlugarItem(livro1);
-        b1.DevolverItem(livro1);
-        b1.ConsultarNRExemplares(livro1);
+        biblioteca.ConsultarNRExemplares(livro1);
+        biblioteca.AlugarItem(livro1);
+        biblioteca.ConsultarNRExemplares(livro1);
+        biblioteca.AlugarItem(livro1);
+        biblioteca.DevolverItem(livro1);
+        biblioteca.ConsultarNRExemplares(livro1);
 
         //teste revista1
-        b1.ConsultarNRExemplares(r1);
-        b1.AlugarItem(r1);
-        b1.ConsultarNRExemplares(r1);
-        b1.AlugarItem(r1);
-        b1.AlugarItem(r1);
-        b1.AlugarItem(r1);
-        b1.ConsultarNRExemplares(r1);
-        b1.DevolverItem(r1);
-        b1.ConsultarNRExemplares(r1);
-
+        biblioteca.ConsultarNRExemplares(r1);
+        biblioteca.AlugarItem(r1);
+        biblioteca.ConsultarNRExemplares(r1);
+        biblioteca.AlugarItem(r1);
+        biblioteca.AlugarItem(r1);
+        biblioteca.AlugarItem(r1);
+        biblioteca.ConsultarNRExemplares(r1);
+        biblioteca.DevolverItem(r1);
+        biblioteca.ConsultarNRExemplares(r1);
     }
 
 }
