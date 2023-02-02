@@ -24,9 +24,9 @@ public class contato {
     }
 
     public void imprime() {
-        String Mensagem = pessoaContato.getNome() + ", " + pessoaContato.getIdade() + " Anos";
-        Mensagem += "\n endereço: " + enderecoContato.getRua() + ", número: " + enderecoContato.getNumero() + " CEP: " + enderecoContato.getCep();
-        Mensagem += "\n com o email: " + getEmail() + " e o telefone: " + getNumeroCelular();
+        String Mensagem = pessoaContato.getNome() + ", " + pessoaContato.getIdade() + " Anos.";
+        Mensagem += "\n Endereço: " + enderecoContato.getRua() + ", número: " + enderecoContato.getNumero() + " CEP: " + enderecoContato.getCep();
+        Mensagem += "\n E-mail: " + getEmail() + " e o telefone: " + getNumeroCelular();
         System.out.println(Mensagem);
     }
 
